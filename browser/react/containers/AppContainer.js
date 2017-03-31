@@ -211,9 +211,13 @@ export default class AppContainer extends Component {
           currentSongList={this.state.currentSongList}
           isPlaying={this.state.isPlaying}
           progress={this.state.progress}
-          next={this.next}
-          prev={this.prev}
-          toggle={this.toggle}
+          const currentSong = this.props.currentSong;
+          const currentSongList = this.props.currentSongList;
+          const isPlaying = this.props.isPlaying;
+          const progress = this.props.progress;
+          const prev = this.props.prev;
+          const toggle = this.props.toggle;
+
         />
       </div>
     );
